@@ -7,12 +7,14 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <input type="range" name="" id="rangeBar" />
-    <p id="rangeValue"></p>
 
+  <body>
+    <nav class="navbar"></nav>
     <div class="imageBox">
-      <img id="sceneImg" src="assets/scenes/scene00001.webp" alt="sceneImg" />
+      <div class="sceneRange">
+        <input type="range" name="" id="rangeBar" min="1" max="93" value="1" />
+      </div>
+      <img id="sceneImg" src="assets/scenes/scene0001.webp" alt="sceneImg" />
     </div>
 
     <script src="script.js"></script>
