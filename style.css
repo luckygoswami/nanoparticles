@@ -21,30 +21,50 @@ nav {
   border: 1px solid red;
   height: calc(100vh - 50px);
   overflow: hidden;
-  /* background-color: red; */
+  background-color: black;
 }
 
 .imageBox .sceneRange {
+  opacity: 0.3;
   margin-top: auto;
   margin-right: 50px;
   padding: 10px;
-  border-radius: 1rem;
-  /* background-color: yellow;
-  border: 1px solid blue; */
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 400px;
-  height: 50px;
+  height: 40px;
   position: absolute;
   right: 0;
   transform-origin: right bottom;
   transform: rotate(-90deg);
 }
 
-#rangeBar {
-  cursor: grab;
+input[type="range"] {
+  display: block;
+  appearance: none;
+  background: #382f2f;
+  border-radius: 5px;
   width: 100%;
+  height: 1px;
+  outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  background-color: #2fb0fc;
+  cursor: grab;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  transform: scale(1.2);
+  cursor: grabbing;
 }
 
 #sceneImg {
