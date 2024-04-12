@@ -94,3 +94,20 @@ input[type="range"]::-webkit-slider-thumb:active {
   height: 100%;
   object-fit: fill;
 }
+
+.definition,
+.properties {
+  padding: 3rem;
+  text-align: center;
+  /* height: 500px; */
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.5rem;
+}
