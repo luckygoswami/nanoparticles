@@ -128,12 +128,6 @@ body > div {
   position: relative;
 }
 
-/* .definition,
-.properties,
-.importance {
-  position: relative;
-} */
-
 .bg-image {
   position: absolute;
   z-index: 1;
