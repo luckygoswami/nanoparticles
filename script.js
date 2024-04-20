@@ -7,19 +7,19 @@ const head = document.querySelector("head");
 const nav = document.querySelector("nav");
 const footer = document.querySelector("footer");
 
-fetch("components/head.html")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    return response.text();
-  })
-  .then((htmlContent) => {
-    head.innerHTML = htmlContent;
-  })
-  .catch((error) => {
-    console.error("There was a problem with the fetch operation:", error);
-  });
+// fetch("components/head.html")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("Network response was not ok");
+//     }
+//     return response.text();
+//   })
+//   .then((htmlContent) => {
+//     head.innerHTML += htmlContent;
+//   })
+//   .catch((error) => {
+//     console.error("There was a problem with the fetch operation:", error);
+//   });
 
 fetch("components/nav.html")
   .then((response) => {
