@@ -52,6 +52,25 @@ footer {
   }
 }
 
+.coverImage {
+  background-image: url(assets/microscope.jpg);
+  background-size: cover;
+  height: 60vh;
+
+  .pageDes {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.226);
+    color: #fff;
+    display: flex;
+    font-size: 4rem;
+    font-weight: 600;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 /* Home page */
 .imageBox {
   background-color: black;
@@ -135,7 +154,7 @@ p {
   text-align: center;
 }
 
-body > div {
+body > section {
   position: relative;
 }
 
