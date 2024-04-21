@@ -255,19 +255,22 @@ svg {
   }
 }
 
+.compounds {
+  text-align: center;
+}
+
 .wiki {
-  /* border: 2px solid blue; */
-  position: relative;
-  width: 80%;
   height: 95vh;
-  overflow: hidden;
   margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 75%;
 
   .table {
+    height: 1500px;
+    margin-left: -400px;
+    margin-top: -132px;
     position: absolute;
     width: 1800px;
-    height: 1500px;
-    margin-top: -132px;
-    margin-left: -400px;
   }
 }
