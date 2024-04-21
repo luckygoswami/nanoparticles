@@ -256,21 +256,26 @@ svg {
 }
 
 .compounds {
-  text-align: center;
-}
+  /* defining these values to override .content values for wikiTable */
+  .content {
+    height: auto;
+    padding: 0;
+    text-align: left;
 
-.wiki {
-  height: 95vh;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 75%;
+    .wiki {
+      height: 95vh;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+      width: 75%;
 
-  .table {
-    height: 1500px;
-    margin-left: -400px;
-    margin-top: -132px;
-    position: absolute;
-    width: 1800px;
+      .table {
+        height: 1500px;
+        margin-left: -400px;
+        margin-top: -132px;
+        position: absolute;
+        width: 1800px;
+      }
+    }
   }
 }
