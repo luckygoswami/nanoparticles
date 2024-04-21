@@ -248,9 +248,10 @@ svg {
 }
 
 .textiles {
-  background-color: #fff;
+  background-color: #e5f1ff;
 
   .content {
+    padding-bottom: 0;
     padding-top: 0;
   }
 }
