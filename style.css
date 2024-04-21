@@ -254,3 +254,20 @@ svg {
     padding-top: 0;
   }
 }
+
+.wiki {
+  /* border: 2px solid blue; */
+  position: relative;
+  width: 80%;
+  height: 95vh;
+  overflow: hidden;
+  margin: auto;
+
+  .table {
+    position: absolute;
+    width: 1800px;
+    height: 1500px;
+    margin-top: -132px;
+    margin-left: -400px;
+  }
+}
