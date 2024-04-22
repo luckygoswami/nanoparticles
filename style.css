@@ -52,7 +52,7 @@ footer {
   }
 }
 
-.coverImage {
+.container .coverImage {
   background-size: cover;
   height: 60vh;
 
@@ -70,214 +70,227 @@ footer {
   }
 }
 
+section {
+  position: relative;
+
+  .bg-image {
+    height: 100%;
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-evenly;
+    padding: 5rem;
+    text-align: center;
+
+    h2 {
+      color: #0074d9;
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #ff0000;
+      font-size: 1.3rem;
+      line-height: 2.3rem;
+      text-align: center;
+    }
+  }
+
+  svg {
+    background-color: transparent;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+}
+
 /* Home page */
-.imageBox {
-  background-color: black;
-  height: calc(100vh - 50px);
-  overflow: hidden;
-  position: relative;
-}
+.index {
+  .imageBox {
+    background-color: black;
+    height: calc(100vh - 50px);
+    overflow: hidden;
+    position: relative;
 
-.imageBox .sceneRange {
-  align-items: center;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 2rem;
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  margin-right: 50px;
-  margin-top: auto;
-  opacity: 0.8;
-  padding: 10px;
-  position: absolute;
-  right: 0;
-  transform-origin: right bottom;
-  transform: rotate(-90deg);
-  width: 400px;
-}
+    .sceneRange {
+      align-items: center;
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 2rem;
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      margin-right: 50px;
+      margin-top: auto;
+      opacity: 0.8;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      transform-origin: right bottom;
+      transform: rotate(-90deg);
+      width: 400px;
 
-input[type="range"] {
-  appearance: none;
-  background: #fff;
-  border-radius: 5px;
-  display: block;
-  height: 1px;
-  outline: 0;
-  width: 100%;
-}
+      input[type="range"] {
+        appearance: none;
+        background: #fff;
+        border-radius: 5px;
+        display: block;
+        height: 1px;
+        outline: 0;
+        width: 100%;
+      }
 
-input[type="range"]::-webkit-slider-thumb {
-  appearance: none;
-  background-color: #2fb0fc;
-  border-radius: 50%;
-  cursor: grab;
-  height: 25px;
-  transition: 0.1s ease-in-out;
-  width: 25px;
-}
+      input[type="range"]::-webkit-slider-thumb {
+        appearance: none;
+        background-color: #2fb0fc;
+        border-radius: 50%;
+        cursor: grab;
+        height: 25px;
+        transition: 0.1s ease-in-out;
+        width: 25px;
+      }
 
-input[type="range"]::-webkit-slider-thumb:active {
-  cursor: grabbing;
-  transform: scale(1.2);
-}
+      input[type="range"]::-webkit-slider-thumb:active {
+        cursor: grabbing;
+        transform: scale(1.2);
+      }
+    }
 
-#sceneImg {
-  height: 100%;
-  object-fit: fill;
-  width: 100%;
-}
-
-.content {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 60vh;
-  justify-content: space-evenly;
-  padding: 5rem;
-  text-align: center;
-}
-
-h2 {
-  color: #0074d9;
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-
-p {
-  color: #111111;
-  font-size: 1.3rem;
-  line-height: 2.3rem;
-  text-align: center;
-}
-
-body > section {
-  position: relative;
-}
-
-.bg-image {
-  height: 100%;
-  opacity: 0.1;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-}
-
-svg {
-  background-color: transparent;
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-
-.definition {
-  background-color: #f5f5f5;
-
-  .bg-image {
-    background-image: url(assets/clipart_1.png);
-  }
-}
-
-.properties {
-  background-color: #708090;
-
-  h2 {
-    color: #fff;
+    #sceneImg {
+      height: 100%;
+      object-fit: fill;
+      width: 100%;
+    }
   }
 
-  p {
-    color: #fff;
+  .definition {
+    background-color: #f5f5f5;
+
+    .bg-image {
+      background-image: url(assets/clipart_1.png);
+    }
   }
-}
 
-.importance {
-  background-color: #f5f5f5;
+  .properties {
+    background-color: #708090;
 
-  .bg-image {
-    background-image: url(assets/clipart_2.png);
-    opacity: 0.17;
+    h2 {
+      color: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .importance {
+    background-color: #f5f5f5;
+
+    .bg-image {
+      background-image: url(assets/clipart_2.png);
+      opacity: 0.17;
+    }
   }
 }
 
 /* Applications page */
-.research {
-  background-color: #f5f5f5;
-
-  .content {
-    padding-bottom: 0;
-  }
-}
-
-.reinforcement {
-  background-color: #d4e4f1;
-
-  h2 {
-    color: #1a5276;
-  }
-}
-
-.electronics {
-  background-color: #f5f5f5;
-}
-
-.energy {
-  background-color: #485564;
-
-  h2 {
-    color: #eee;
+.applications {
+  .coverImage {
+    background-image: url(assets/microscope.jpg);
   }
 
-  p {
-    color: #f5f5f5;
+  .research {
+    background-color: #f5f5f5;
+
+    .content {
+      padding-bottom: 0;
+    }
   }
-}
 
-.cosmetics {
-  background-color: #f5f5f5;
-}
+  .reinforcement {
+    background-color: #d4e4f1;
 
-.environment {
-  background-color: #e6e6fa;
-}
-
-.food-and-agriculture {
-  background-color: #f5f5f5;
-}
-
-.textiles {
-  background-color: #e5f1ff;
-
-  .content {
-    padding-bottom: 0;
-    padding-top: 0;
+    h2 {
+      color: #1a5276;
+    }
   }
-}
 
-.compounds {
-  /* defining these values to override .content values for wikiTable */
-  .content {
-    height: auto;
-    padding: 0;
-    text-align: left;
+  .electronics {
+    background-color: #f5f5f5;
+  }
 
-    .wiki {
-      height: 95vh;
-      margin: auto;
-      overflow: hidden;
-      position: relative;
-      width: 75%;
+  .energy {
+    background-color: #485564;
 
-      .table {
-        height: 1500px;
-        margin-left: -400px;
-        margin-top: -132px;
-        position: absolute;
-        width: 1800px;
+    h2 {
+      color: #eee;
+    }
+
+    p {
+      color: #f5f5f5;
+    }
+  }
+
+  .cosmetics {
+    background-color: #f5f5f5;
+  }
+
+  .environment {
+    background-color: #e6e6fa;
+  }
+
+  .food-and-agriculture {
+    background-color: #f5f5f5;
+  }
+
+  .textiles {
+    background-color: #e5f1ff;
+
+    .content {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+
+  .compounds {
+    /* defining these values to override .content values for wikiTable */
+    .content {
+      height: auto;
+      padding: 0;
+      text-align: left;
+
+      .wiki {
+        height: 95vh;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 75%;
+
+        .table {
+          height: 1500px;
+          margin-left: -400px;
+          margin-top: -132px;
+          position: absolute;
+          width: 1800px;
+        }
       }
     }
   }
 }
 
 /* Innovations */
+.innovations {
+  .coverImage {
+    background-image: url(assets/laboratory.jpg);
+  }
+}
