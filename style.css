@@ -293,4 +293,41 @@ section {
   .coverImage {
     background-image: url(assets/laboratory.jpg);
   }
+
+  .drug-delivery {
+    border: 1px solid red;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 50px; */
+
+    .details {
+      /* background-color: lightcyan;
+      border: 1px solid blue; */
+      height: 100%;
+      width: 60%;
+      line-height: 1.75rem;
+      font-size: 1.25rem;
+
+      h3 {
+        display: inline;
+      }
+
+      p {
+        display: inline;
+      }
+    }
+
+    .details-img {
+      background-color: lightpink;
+      background-repeat: no-repeat;
+      height: 350px;
+      width: 500px;
+      /* width: 50%; */
+      background-image: url(assets/innovations/targeteddrug.jpg);
+      background-size: cover;
+      /* border: 1px solid brown; */
+    }
+  }
 }
