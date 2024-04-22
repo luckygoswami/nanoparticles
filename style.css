@@ -295,20 +295,17 @@ section {
   }
 
   .drug-delivery {
+    align-items: center;
     border: 1px solid red;
-    padding: 3rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    /* gap: 50px; */
+    padding: 3rem;
 
     .details {
-      /* background-color: lightcyan;
-      border: 1px solid blue; */
-      height: 100%;
-      width: 60%;
-      line-height: 1.75rem;
       font-size: 1.25rem;
+      height: 100%;
+      line-height: 1.75rem;
+      width: 60%;
 
       h3 {
         display: inline;
@@ -321,13 +318,11 @@ section {
 
     .details-img {
       background-color: lightpink;
+      background-image: url(assets/innovations/targeteddrug.jpg);
       background-repeat: no-repeat;
+      background-size: cover;
       height: 350px;
       width: 500px;
-      /* width: 50%; */
-      background-image: url(assets/innovations/targeteddrug.jpg);
-      background-size: cover;
-      /* border: 1px solid brown; */
     }
   }
 }
