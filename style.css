@@ -53,7 +53,6 @@ footer {
 }
 
 .coverImage {
-  background-image: url(assets/microscope.jpg);
   background-size: cover;
   height: 60vh;
 
@@ -280,3 +279,5 @@ svg {
     }
   }
 }
+
+/* Innovations */
