@@ -296,7 +296,6 @@ section {
 
   section {
     align-items: center;
-    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     padding: 5rem;
@@ -317,7 +316,6 @@ section {
     }
 
     .details-img {
-      /* background-color: lightpink; */
       background-repeat: no-repeat;
       background-size: cover;
       height: 350px;
@@ -334,8 +332,6 @@ section {
   }
 
   .nanocomposites {
-    /* background-color: hsl(204, 45%, 98%); */
-
     .details {
       text-align: right;
     }
@@ -374,3 +370,5 @@ section {
     }
   }
 }
+
+/* Nanosafety */
