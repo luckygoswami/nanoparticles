@@ -294,12 +294,12 @@ section {
     background-image: url(assets/laboratory.jpg);
   }
 
-  .drug-delivery {
+  section {
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 5rem;
 
     .details {
       font-size: 1.25rem;
@@ -318,11 +318,51 @@ section {
 
     .details-img {
       background-color: lightpink;
-      background-image: url(assets/innovations/targeteddrug.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       height: 350px;
       width: 500px;
+    }
+  }
+
+  .drug-delivery {
+    .details-img {
+      background-image: url(assets/innovations/targeteddrug.jpg);
+    }
+  }
+
+  .nanocomposites {
+    .details {
+      text-align: right;
+    }
+
+    .details-img {
+      background-image: url(assets/innovations/nanocomposite.png);
+      height: 250px;
+      width: 500px;
+    }
+  }
+
+  .nanosensors {
+    .details-img {
+      background-image: url(assets/innovations/nanosensors.png);
+    }
+  }
+
+  .nanoenergy {
+    .details {
+      text-align: right;
+    }
+
+    .details-img {
+      background-image: url(assets/innovations/nanoenergy.png);
+    }
+  }
+
+  .green-nanotechnology {
+    .details-img {
+      background-image: url(assets/innovations/green_nanotechnology.webp);
+      width: 400px;
     }
   }
 }
