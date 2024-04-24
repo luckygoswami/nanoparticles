@@ -372,3 +372,19 @@ section {
 }
 
 /* Nanosafety */
+.nanosafety {
+  .chart {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .detailsImg {
+      background-image: url(assets/nanomaterials-12-01810-g001.jpg);
+      background-size: contain;
+      width: 1055px;
+      height: 600px;
+    }
+  }
+}
