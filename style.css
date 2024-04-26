@@ -418,4 +418,19 @@ section {
       }
     }
   }
+
+  .healthhazards-and-toxicity {
+    display: flex;
+    gap: 3rem;
+
+    .health-hazards ol li,
+    .mechanism ol li {
+      margin-top: 1rem;
+    }
+  }
+}
+
+ul,
+ol {
+  padding: 0 0 0 40px;
 }
