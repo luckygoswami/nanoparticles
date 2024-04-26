@@ -387,4 +387,35 @@ section {
       height: 600px;
     }
   }
+
+  section {
+    padding: 5rem;
+  }
+
+  .overview-and-keyterms {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    .overview {
+      p {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+
+    .keyterms {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+
+      h3,
+      p {
+        display: inline;
+      }
+    }
+  }
 }
