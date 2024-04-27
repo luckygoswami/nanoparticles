@@ -114,6 +114,15 @@ section {
   }
 }
 
+ul,
+ol {
+  padding: 0 0 0 40px;
+
+  li {
+    margin-top: 1rem;
+  }
+}
+
 /* Home page */
 .index {
   .imageBox {
@@ -374,17 +383,17 @@ section {
 /* Nanosafety */
 .nanosafety {
   .chart {
-    padding: 5rem;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
 
     .detailsImg {
       background-image: url(assets/nanomaterials-12-01810-g001.jpg);
       background-size: contain;
-      width: 1055px;
       height: 600px;
+      width: 1055px;
     }
   }
 
@@ -395,9 +404,9 @@ section {
   .overview-and-keyterms {
     background-color: #f9f9f9;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 2rem;
+    justify-content: center;
 
     .overview {
       p {
@@ -407,10 +416,10 @@ section {
     }
 
     .keyterms {
-      display: flex;
-      justify-content: center;
       align-items: center;
+      display: flex;
       gap: 2rem;
+      justify-content: center;
 
       h3,
       p {
@@ -436,9 +445,22 @@ section {
       padding: 0;
     }
   }
-}
 
-ul,
-ol {
-  padding: 0 0 0 40px;
+  .risk-management {
+    padding: auto;
+
+    h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    ol {
+      padding-left: 5rem;
+
+      h3 {
+        margin-top: 2rem;
+      }
+    }
+  }
 }
