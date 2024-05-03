@@ -467,6 +467,7 @@ ol {
 /* Horizon */
 .horizon {
   .hero {
+    position: relative;
     background-color: rebeccapurple;
     width: 100%;
     height: calc(100vh - 4rem);
@@ -475,6 +476,30 @@ ol {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    .title {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.575);
+      width: 100%;
+      height: 100%;
+      top: 0;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: #fff;
+        font-size: 4rem;
+      }
+
+      p {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: 250;
+      }
     }
   }
 }
