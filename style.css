@@ -468,7 +468,7 @@ ol {
 .horizon {
   .hero {
     background-color: rebeccapurple;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - 4.25rem);
     position: relative;
     width: 100%;
 
@@ -500,6 +500,12 @@ ol {
         font-size: 1.5rem;
         font-weight: 250;
       }
+    }
+
+    .explore {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
     }
   }
 }
