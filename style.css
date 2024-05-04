@@ -541,7 +541,6 @@ ol {
       }
 
       .description {
-        /* border: 1px solid lightblue; */
         display: flex;
         flex-wrap: wrap;
 
