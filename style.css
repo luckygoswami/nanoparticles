@@ -508,4 +508,40 @@ ol {
       bottom: 0;
     }
   }
+
+  .solar {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .cont {
+      padding: 3rem 3rem 0 3rem;
+      background-color: rgba(0, 0, 0, 0.575);
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      top: 0;
+
+      .title {
+        p {
+          color: #fff;
+        }
+      }
+
+      .description {
+        width: 100%;
+        height: 50vh;
+        background-color: lightblue;
+      }
+    }
+  }
 }
