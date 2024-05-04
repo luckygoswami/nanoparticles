@@ -534,13 +534,23 @@ ol {
       .title {
         p {
           color: #fff;
+          font-size: 1.17rem;
+          font-weight: 350;
+          line-height: 1.7rem;
         }
       }
 
       .description {
-        background-color: lightblue;
-        height: 50vh;
-        width: 100%;
+        /* border: 1px solid lightblue; */
+        display: flex;
+        flex-wrap: wrap;
+
+        .des-box {
+          background-color: #0074d923;
+          height: 200px;
+          margin: 1rem;
+          width: 580px;
+        }
       }
     }
   }
