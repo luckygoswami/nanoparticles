@@ -553,14 +553,14 @@ ol {
           text-overflow: ellipsis; */
 
           p {
-            line-height: 1.2rem;
-            font-weight: 260;
-            color: #fff;
-            width: 100%;
-            display: -webkit-box;
-            -webkit-line-clamp: 10;
             -webkit-box-orient: vertical;
+            -webkit-line-clamp: 10;
+            color: #fff;
+            display: -webkit-box;
+            font-weight: 260;
+            line-height: 1.2rem;
             overflow: hidden;
+            width: 100%;
           }
         }
       }
