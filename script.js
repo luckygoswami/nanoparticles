@@ -6,8 +6,9 @@ const sceneImg = document.getElementById("sceneImg");
 const head = document.querySelector("head");
 const nav = document.querySelector("nav");
 const footer = document.querySelector("footer");
-const dexBox = document.querySelectorAll(".des-box p");
-dexBox.forEach((p) => {
+const desBoxP = document.querySelectorAll(".des-box p");
+
+desBoxP.forEach((p) => {
   let title = p.textContent;
   p.title = title;
 });
