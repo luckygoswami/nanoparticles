@@ -563,4 +563,26 @@ ol {
       }
     }
   }
+
+  .recent-advances {
+    padding: 3rem;
+
+    ul {
+      h2 {
+        color: #1f618d;
+        font-size: 3rem;
+        text-transform: uppercase;
+      }
+
+      li {
+        h3 {
+          color: #2c3e50;
+          display: inline;
+        }
+        p {
+          display: inline;
+        }
+      }
+    }
+  }
 }
