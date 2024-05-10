@@ -467,7 +467,6 @@ ol {
 /* Horizon */
 .horizon {
   .hero {
-    background-color: rebeccapurple;
     height: calc(100vh - 4.25rem);
     position: relative;
     width: 100%;
@@ -505,6 +504,7 @@ ol {
     .explore {
       position: absolute;
       left: 50%;
+      transform: translateX(-50%);
       bottom: 0;
     }
   }
