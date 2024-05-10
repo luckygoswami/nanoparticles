@@ -7,10 +7,22 @@ const head = document.querySelector("head");
 const nav = document.querySelector("nav");
 const footer = document.querySelector("footer");
 const desBoxP = document.querySelectorAll(".des-box p");
+const scrollBtn = document.querySelectorAll(".scroll-btn");
 
 desBoxP.forEach((p) => {
   let title = p.textContent;
   p.title = title;
+});
+
+scrollBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    let nextScrollPosition =
+      (Math.ceil(window.scrollY / window.innerHeight) + 1) * window.innerHeight;
+    window.scrollTo({
+      top: nextScrollPosition,
+      behavior: "smooth",
+    });
+  });
 });
 
 fetch("components/nav.html")
