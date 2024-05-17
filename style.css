@@ -613,4 +613,22 @@ ol {
       }
     }
   }
+
+  .scroll-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 1rem;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
 }
