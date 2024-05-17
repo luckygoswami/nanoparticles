@@ -605,6 +605,7 @@ ol {
       align-items: center;
       display: flex;
       gap: 3rem;
+      padding: 0.5rem 0;
 
       .video-des {
         color: #333333;
